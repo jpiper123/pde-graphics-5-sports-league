@@ -5,8 +5,12 @@
  * <Computer Science assignment. Code formats text output.>
  * 
  */
- 
+  PImage NHL;
+  float offset = 0;
+  float easing = 0.05;
 void setup() {
+  size(800,400);
+  NHL = loadImage("http://2.bp.blogspot.com/_duISrNy-0QQ/TULsg-lSsfI/AAAAAAAAAUg/UdZ7clj_D_w/s1600/NHL_logo.jpg");
    String team1name = "Edmonton Oilers";
    println ("The first team is called the Edmonton Oilers");
    String team2name = "Toronto Maple Leafs";
@@ -37,9 +41,12 @@ void setup() {
 }
 
 void draw() {
-  background(100,10,100);
+  image(NHL, 0, 0, 800, 400);
+  tint(255, 127);
   fill(255,255,255);
-  for (int x=0; x<2; x++) { //Rectangles
+  for (int x=0; x<4; x++) {
     for (int y=0; y<4; y++) {
-     rect(100*x,50*y,100,50);
+     rect(175*x,75*y,175,75);
+    }
+  }
 }
