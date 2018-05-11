@@ -49,4 +49,22 @@ void draw() {
      rect(175*x,75*y,175,75);
     }
   }
+  fill(0,0,0);
+  textSize(20);
+  text("Team",55,50); //Teams
+  text("Oilers",55,120);
+  text("Maple Leafs",45,195);
+  text("Flames",55,265);
+   
+  text("Wins",235,50); //Wins,Losses,and Points
+  text("Losses",400,50);
+  text("Points",575,50);
+  
+  text("7",240,120); //Wins
+  text("15",235,195);
+  text("11",235,265);
+  
+  text("13",410,120); //Losses
+  text("5",410,195);
+  text("9",410,265);
 }
